@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	{% block content %}
+		<!-- Blog Card  -->
+		<div class="card border-dark m-3" style="max-width: 18rem;">
+		  <div class="card-header">Blog {{ object.id }}</div>
+		  <div class="card-body">
+		    <h5 class="card-title">{{ object.title }}</h5>
+		    <p class="card-text">{{ object.body }}</p>
+		    <h10>{{ object.create_date }}</h10>
+		  </div>
+		</div>
+		<!-- End Card -->
+	{% endblock %}
+
+</body>
+</html>
+
